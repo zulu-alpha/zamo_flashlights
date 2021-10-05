@@ -73,7 +73,7 @@ class cfgWeapons {
             class FlashLight {
                 ambient[] = {0.58431,0.72941,0.81569};
                 color[] = {149,186,208};
-                coneFadeCoef = 32;
+                coneFadeCoef = 12;      //Changed from 32
                 dayLight = 0;
                 direction = "flash";
                 flareMaxDistance = 300;
@@ -159,7 +159,7 @@ class cfgWeapons {
                 flareMaxDistance = 0;
                 flareSize = 0.1;
                 innerAngle = 25;
-                intensity = 0.5;
+                intensity = 1;  
                 outerAngle = 80;
                 position = "flash dir";
                 scale[] = {0};
@@ -190,6 +190,7 @@ class cfgWeapons {
             mass=6;
             RMBhint="IR Flashlight - low light";
             class FlashLight {
+                irLight = 1;            //true IR light now
                 ambient[]={0,0,0};
                 color[] = {40,40,70,0.5};
                 coneFadeCoef = 0;
@@ -198,7 +199,7 @@ class cfgWeapons {
                 flareMaxDistance = "0";
                 flareSize = 0.1;
                 innerAngle = 10;
-                intensity = 10;
+                intensity = 55;
                 outerAngle = 25;
                 position = "flash dir";
                 scale[] = {0};
@@ -206,7 +207,7 @@ class cfgWeapons {
                 useFlare = 0;
                 class Attenuation {
                     constant = 0;
-                    hardLimitEnd = 65;
+                    hardLimitEnd = 120;
                     hardLimitStart = 4;
                     linear = 10;
                     quadratic = 1;
@@ -247,7 +248,7 @@ class za_flashlight_pointer: CUP_acc_ANPEQ_15_Flashlight_Black_L {
 				direction="flash";
 				useFlare=0;
 				flareSize=0;
-				flareMaxDistance=100;
+				flareMaxDistance=400;
 				dayLight=0;
 				class Attenuation
 				{
